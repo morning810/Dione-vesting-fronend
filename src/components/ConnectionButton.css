@@ -1,0 +1,13 @@
+
+
+.image-button1 {
+    background-image: url('/images/frame.png');
+    background-size: 100% 100%; /* or use 100% 100% to stretch the image */
+    background-position: center;
+    background-color: transparent;
+    width: 207px; /* Set your desired width */
+    height: 130px; /* Set your desired height */
+    border: none; /**/
+    color: black; /* Adjust the text color as needed */
+    /* Add other styling as needed */
+}

@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.blog-graphic-radial {
+  background-image: radial-gradient( circle farthest-corner at 50% 50%,  rgba(39, 16, 180, 0.28), rgba(0,0,0,0.05) 60% );
+}
+
+.connect-graphic-radial {
+  background-image: radial-gradient( circle farthest-corner at 50% 50%,  rgba(180, 16, 95, 0.28), rgba(0,0,0,0.05) 60% );
+}
+
+.sidebar-graphic-radial {
+  background-image: radial-gradient( circle farthest-corner at 10% 50%,  rgba(171, 80, 189, 0.28), rgba(0,0,0,0.05) 60% );
+}
+
+.whitespot-graphic-radial {
+  background-image: radial-gradient( circle farthest-corner at 10% 50%,  rgba(255, 255, 255, 0.9), rgba(0,0,0,0.05) 60% );
+}
+
+.explore-darkblue-radial {
+  background-image: radial-gradient( circle farthest-corner at 50% 50%,  rgba(39, 16, 180, 0.28), rgba(0,0,0,0.05) 60% );
+}
+
+.explore-pink-radial {
+  background-image: radial-gradient( circle farthest-corner at 50% 50%,  rgba(171, 80, 189, 0.28), rgba(0,0,0,0.05) 60% );
+
+}
+
+.vesting-darkblue-radial {
+  background-image: radial-gradient( circle farthest-corner at 50% 50%,  rgba(13, 64, 138, 0.28), rgba(0,0,0,0.05) 60% );
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

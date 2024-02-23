@@ -1,0 +1,13 @@
+
+
+.image-button {
+    background-image: url('/images/spiral.png');
+    background-size: 100% 100%; /* or use 100% 100% to stretch the image */
+    background-position: center;
+    background-color: transparent;
+    width: 180px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    border: none;
+    color: white; /* Adjust the text color as needed */
+    /* Add other styling as needed */
+}
