@@ -309,7 +309,7 @@ const Explorer = () => {
                 {
                     isConnected &&
 
-                    <div className="w-[250px] flex justify-center relative" >
+                    <div className="w-[250px] flex justify-center relative">
                         <div className={`mt-2 py-3  ${filterFlag === FILTERS.MINE && "block whitespot-graphic-radial w-[18px] h-[28px] "} `} ></div>
                         <div className={` w-full flex justify-center mr-[9px] `}>
                             <div className={`max-w-[180px] bg-transparent py-2 px-10 text-[#B3B3B3] text-center cursor-pointer ${filterFlag === FILTERS.MINE && "text-[#fff] bg-gradient-to-b from-pink-button-top-color to-pink-button-bottom-color  rounded-full shadow-[-10px_-10px_30px_10px_rgba(255,64,154,0.1),_10px_10px_30px_10px_rgba(196,56,239,0.15)]  "}`}

@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <WagmiConfig config={wagmiConfig}>
       <BrowserRouter>
-        <App className="font-sans" />
+        <App className="font-sans"/>
         <ToastContainer position="top-left" />
       </BrowserRouter>
     </WagmiConfig>
