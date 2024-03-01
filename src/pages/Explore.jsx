@@ -294,7 +294,6 @@ const Explorer = () => {
       }
       setIsReading(true);
       let vestReadingPromise;
-      console.log("======= activeTab============", activeTab);
 
       if (activeTab === "coin") {
         vestReadingPromise = VestingFactoryContract.methods
