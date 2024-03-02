@@ -315,6 +315,7 @@ const Explorer = () => {
 
       Promise.all([vestReadingPromise])
         .then((results) => {
+          console.log("========== reading:", results);
           const filteredResults = results[0][0].map((result, index) => {
             return {
               id: pageSize * newPage + index,

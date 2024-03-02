@@ -289,6 +289,9 @@ const Vesting = () => {
           publicParams?.target
         );
 
+        console.log("===== publicParams:", publicParams);
+        console.log("===== paramsFromDB:", paramsFromDB);
+
         const amountTobeVested = parseFloat(
           formatUnits(publicParams?.amount, parseInt(publicParams?.decimals))
         );
